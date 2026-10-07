@@ -8,10 +8,12 @@
   if (!section || !stage) return;
 
   var PHOTOS = [
-    'media/photos/food-platter.jpg',
-    'media/photos/food-thali.jpg',
-    'media/photos/food-collage.jpg',
-    'media/photos/dessert-cake.jpg'
+    'media/photos/dish-seekh-kebab.webp',
+    'media/photos/dish-manchurian.webp',
+    'media/photos/dish-chilli-mushroom.webp',
+    'media/photos/dish-afghani-chicken.webp',
+    'media/photos/dish-finger-chips.webp',
+    'media/photos/dish-dal-special.webp'
   ];
   var coarse = window.matchMedia('(pointer: coarse)').matches;
   var POOL = coarse ? 3 : 6;
@@ -55,7 +57,7 @@
     var el = pool[next];
     next = (next + 1) % POOL;
     if (si >= seq.length) { seq = shuffled(); si = 0; }
-    el.src = seq[si++];
+    el.src = PHOTOS[seq[si++]];
     var w = el.offsetWidth || 120, h = el.offsetHeight || 90;
     var px = Math.max(8, Math.min(r.width - w - 8, x - r.left - w / 2));
     var py = Math.max(8, Math.min(r.height - h - 8, y - r.top - h / 2));
