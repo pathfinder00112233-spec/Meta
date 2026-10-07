@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://mahtab-demo.example.com/sitemap.xml

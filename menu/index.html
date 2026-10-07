@@ -1,117 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu — Mahtab Rooftop Restaurant, Delhi</title>
-<meta name="description" content="Mahtab's demo menu: starters, tandoor & kebabs, Chinese, North Indian mains, breads, beverages and desserts. Prices from public listings.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Menu — Mahtab, Moonlit rooftop restaurant in Delhi</title>
+<meta name="description" content="The Mahtab menu: 20 entries in five categories — starters, tandoor & kebabs, main course, breads, beverages & desserts. 14 Janpath, Connaught Place, New Delhi.">
+<meta name="theme-color" content="#f8f4ec">
+<meta property="og:title" content="Mahtab — Menu">
+<meta property="og:description" content="Tandoor, kebabs, North Indian classics and desserts. Open daily 11 AM – 11:30 PM.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../media/video/poster_1920.jpg">
+
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d9a441'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23171419'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="font" type="font/woff2" href="../fonts/anton-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="../fonts/manrope-latin.woff2" crossorigin>
 <link rel="stylesheet" href="../fonts/fonts.css">
 <link rel="stylesheet" href="../css/site.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "Mahtab Multicuisine Rooftop Restaurant",
-  "telephone": "+91 11 4155 8899",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "14 Janpath, Connaught Place",
-    "addressLocality": "New Delhi", "addressRegion": "Delhi",
-    "postalCode": "110001", "addressCountry": "IN"
-  },
-  "openingHours": "Mo-Su 11:00-23:30"
-}
-</script>
+<script>document.documentElement.classList.replace('no-js','js');try{if(localStorage.getItem('ep-motion')==='off')document.documentElement.classList.add('reduce-motion')}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Mahtab Multicuisine Rooftop Restaurant", "address": {"@type": "PostalAddress", "streetAddress": "14 Janpath, Connaught Place", "addressLocality": "New Delhi", "addressRegion": "Delhi", "postalCode": "110001", "addressCountry": "IN"}, "servesCuisine": ["North Indian", "Chinese", "Mughlai", "Kebab"], "telephone": "+91-11-4155-8899"}</script>
 </head>
-<body>
+<body class="page-menu">
+<a class="skip-link" href="index.html#main">Skip to content</a>
+<div class="atmosphere" aria-hidden="true"><div class="aurora aurora-1"></div><div class="aurora aurora-2"></div><div class="aurora aurora-3"></div><div class="grain"></div></div>
+<div class="cursor-glow" aria-hidden="true"></div>
 
-<nav class="site-nav" id="siteNav" aria-label="Primary">
-  <a class="brand-mini" href="../">MAHTAB</a>
-  <div class="nav-links">
-    <a href="../#gallery" class="hide-sm">Rooftop</a>
-    <a href="../#visit" class="hide-sm">Visit</a>
-    <a class="call-btn" href="tel:+911141558899">Call</a>
-    <button class="motion-toggle" id="motionToggle" aria-pressed="false">Motion: On</button>
-  </div>
-</nav>
-
-<header class="menu-hero">
-  <div class="glow glow-a" aria-hidden="true"></div>
-  <div class="section-inner reveal">
-    <p class="section-kicker">The menu</p>
-    <h1 class="section-title">Eat like the moon<br>is watching.</h1>
-    <p class="section-lead" style="margin:0 auto;">Mughlai, North Indian and tandoor classics — search the whole menu or pick a category.</p>
-    <div class="menu-tools">
-      <input class="menu-search" id="menuSearch" type="search" placeholder="Search dishes… e.g. kebab" aria-label="Search the menu">
+<header class="nav is-compact" id="nav">
+  <div class="nav-progress" aria-hidden="true"><span id="navProgress"></span></div>
+  <a class="nav-brand" href="../" aria-label="Mahtab, home"><span class="nav-mark" aria-hidden="true">M</span><span>Mahtab</span></a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="../">Home</a>
+    <a href="#menu" class="is-active" aria-current="page">Menu</a>
+    <a href="../#gallery">Rooftop</a>
+    <a href="../#rooms">Views</a>
+    <a href="../#visit">Visit</a>
+    <span class="nav-marker" id="navMarker" aria-hidden="true"></span>
+  </nav>
+  <div class="nav-tools">
+    <div class="order-chooser" id="orderChooser">
+      <button type="button" class="nav-order" id="orderBtn" aria-expanded="false" aria-controls="orderMenu" aria-haspopup="true">Reserve<span class="nav-order-ext">&nbsp;a table</span> <span class="nav-order-caret" aria-hidden="true">▾</span></button>
+      <div class="order-menu" id="orderMenu" hidden>
+        <p class="order-menu-title">Reserve your table</p>
+        <a class="order-option" href="tel:+911141558899"><span class="order-option-name">Call to reserve</span><span class="order-option-note">Opens your phone app</span></a>
+      </div>
     </div>
-    <div class="cat-pills" id="catPills" role="tablist" aria-label="Menu categories"></div>
+    <button class="motion-toggle" id="motionToggle" type="button" aria-pressed="true"><span class="motion-dot" aria-hidden="true"></span><span class="motion-label">Motion on</span></button>
+    <button class="nav-menu" id="navMenu" type="button" aria-expanded="false" aria-controls="navPanel">Menu</button>
+  </div>
+  <div class="nav-panel" id="navPanel" hidden>
+    <a href="../">Home</a><a href="#menu">Menu</a><a href="../#gallery">Rooftop</a><a href="../#rooms">Views</a><a href="../#visit">Visit</a>
+    <a href="tel:+911141558899">Call to reserve</a>
   </div>
 </header>
 
-<main id="menuList">
-  <p class="menu-count" id="menuCount"></p>
+<main id="main">
+<section class="menu-hero" aria-labelledby="menuPageTitle">
+  <div class="fields" aria-hidden="true"><span class="field field-a" data-depth="0.18"></span><span class="field field-b" data-depth="0.26"></span></div>
+  <div class="menu-hero-inner">
+    <p class="eyebrow">Mahtab · Connaught Place</p>
+    <h1 class="section-title menu-hero-title" id="menuPageTitle" data-lines>The menu</h1>
+    <p class="lead">20 entries in five categories, from the tandoor to dessert. Pick a category or search the whole menu.</p>
+    <div class="menu-hero-actions">
+      <a class="button button-primary button-call" href="tel:+911141558899"><svg class="i-call" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call to reserve</a>
+      <a class="button button-ghost" href="../">Back to home</a>
+    </div>
+  </div>
+</section>
 
-  <section class="menu-cat" data-cat="Starters">
-    <h2 class="menu-cat-title">Starters</h2>
-    <div class="menu-item" data-name="paneer tikka angar"><div><span class="veg-dot veg"></span><span class="menu-item-name">Paneer Tikka Angar</span><p class="menu-item-desc">Charred cottage cheese, smoked yogurt, mint chutney.</p></div><span class="menu-item-price">₹320</span></div>
-    <div class="menu-item" data-name="dahi ke kebab"><div><span class="veg-dot veg"></span><span class="menu-item-name">Dahi Ke Kebab</span><p class="menu-item-desc">Crisp Lucknowi yogurt kebabs, beetroot mayo.</p></div><span class="menu-item-price">₹280</span></div>
-    <div class="menu-item" data-name="amritsari fish fry"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Amritsari Fish Fry</span><p class="menu-item-desc">Ajwain-battered fish, pickled onion rings.</p></div><span class="menu-item-price">₹380</span></div>
-    <div class="menu-item" data-name="chicken 65"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Chicken 65</span><p class="menu-item-desc">Curry-leaf tossed, red chilli glaze.</p></div><span class="menu-item-price">₹340</span></div>
-  </section>
+<!-- Food spotlight: the 32 photographed dishes -->
+<section class="food food-on-menu" id="food" data-palette="warm" aria-labelledby="foodTitle">
+  <div class="fields" aria-hidden="true"><span class="field field-c" data-depth="0.2"></span></div>
+  <div class="food-inner">
+    <div class="food-head">
+      <p class="eyebrow" data-reveal="fade">Photographed</p>
+      <h2 class="section-title" id="foodTitle" data-lines>Six dishes, up close</h2>
+      <p class="food-note" data-reveal="fade">Photos and names from the kitchen. Choose a dish to see it large.</p>
+    </div>
+    <div class="spot" id="spot">
+      <div class="spot-stage" id="spotStage">
+        <div class="spot-frame" id="spotFrame">
+          <img class="spot-img is-active" id="spotImgA" src="../media/menu/tandoori-platter_800.jpg" width="800" height="800" decoding="async" alt="Tandoori Platter">
+          <img class="spot-img" id="spotImgB" src="index.html" width="800" height="800" decoding="async" alt="" aria-hidden="true">
+          <span class="spot-light" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="spot-text">
+        <p class="spot-cat" id="spotCat">Tandoor &amp; Kebabs</p>
+        <h3 class="spot-name" id="spotName" aria-live="polite">Tandoori Platter</h3>
+        <div class="spot-actions">
+          <a class="button button-primary button-call" id="spotOrder" href="tel:+911141558899"><svg class="i-call" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call to reserve</a>
+          <button type="button" class="button button-ghost" id="spotView">View photo</button>
+        </div>
+        <p class="spot-index" id="spotIndex">1 of 6</p>
+        <div class="spot-nav">
+          <button class="round-btn" id="spotPrev" type="button" aria-label="Previous dish"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="round-btn" id="spotNext" type="button" aria-label="Next dish"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <ul class="spot-thumbs" id="spotThumbs" aria-label="Photographed dishes">
+      <li><button type="button" class="spot-thumb is-active" data-spot="mahtab-005" aria-pressed="true" aria-label="Tandoori Platter, Tandoor &amp; Kebabs"><img src="../media/menu/tandoori-platter_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt=""></button></li>
+<li><button type="button" class="spot-thumb" data-spot="mahtab-006" aria-pressed="false" aria-label="Chicken Seekh Kebab, Tandoor &amp; Kebabs"><img src="../media/menu/seekh-kebab_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt=""></button></li>
+<li><button type="button" class="spot-thumb" data-spot="mahtab-009" aria-pressed="false" aria-label="Dal Mahtab, Main Course"><img src="../media/menu/dal-mahtab_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt=""></button></li>
+<li><button type="button" class="spot-thumb" data-spot="mahtab-010" aria-pressed="false" aria-label="Butter Chicken, Main Course"><img src="../media/menu/butter-chicken_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt=""></button></li>
+<li><button type="button" class="spot-thumb" data-spot="mahtab-011" aria-pressed="false" aria-label="Chicken Biryani, Main Course"><img src="../media/menu/chicken-biryani_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt=""></button></li>
+<li><button type="button" class="spot-thumb" data-spot="mahtab-017" aria-pressed="false" aria-label="Kulfi Falooda, Beverages &amp; Desserts"><img src="../media/menu/kulfi-falooda_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt=""></button></li>
+    </ul>
+  </div>
+</section>
 
-  <section class="menu-cat" data-cat="Tandoor & Kebabs">
-    <h2 class="menu-cat-title">Tandoor &amp; Kebabs</h2>
-    <div class="menu-item" data-name="tandoori platter"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Tandoori Platter</span><p class="menu-item-desc">Chicken tikka, seekh, tangdi — smoked over coals.</p></div><span class="menu-item-price">₹540</span></div>
-    <div class="menu-item" data-name="chicken seekh kebab"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Chicken Seekh Kebab</span><p class="menu-item-desc">Hand-minced, clay-oven smoked, onion laccha.</p></div><span class="menu-item-price">₹440</span></div>
-    <div class="menu-item" data-name="murgh malai kebab"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Murgh Malai Kebab</span><p class="menu-item-desc">Cream-cheese marinated, charred edges.</p></div><span class="menu-item-price">₹460</span></div>
-    <div class="menu-item" data-name="mushroom tikka"><div><span class="veg-dot veg"></span><span class="menu-item-name">Mushroom Tikka</span><p class="menu-item-desc">Charred button mushrooms, kasundi mayo.</p></div><span class="menu-item-price">₹320</span></div>
-  </section>
-
-  <section class="menu-cat" data-cat="Chinese">
-  </section>
-
-  <section class="menu-cat" data-cat="Main Course">
-    <h2 class="menu-cat-title">Main Course</h2>
-    <div class="menu-item" data-name="dal mahtab"><div><span class="veg-dot veg"></span><span class="menu-item-name">Dal Mahtab</span><p class="menu-item-desc">Black dal simmered overnight, white butter, cream.</p></div><span class="menu-item-price">₹320</span></div>
-    <div class="menu-item" data-name="butter chicken"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Butter Chicken</span><p class="menu-item-desc">Old Delhi recipe, tomato-makhani gravy.</p></div><span class="menu-item-price">₹420</span></div>
-    <div class="menu-item" data-name="chicken biryani"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Chicken Biryani</span><p class="menu-item-desc">Dum-sealed handi, saffron, crisp birista.</p></div><span class="menu-item-price">₹380</span></div>
-    <div class="menu-item" data-name="paneer lababdar"><div><span class="veg-dot veg"></span><span class="menu-item-name">Paneer Lababdar</span><p class="menu-item-desc">Rich tomato-cashew gravy, kasuri methi.</p></div><span class="menu-item-price">₹340</span></div>
-    <div class="menu-item" data-name="rogan josh"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Rogan Josh</span><p class="menu-item-desc">Slow-cooked mutton, Kashmiri chilli.</p></div><span class="menu-item-price">₹480</span></div>
-  </section>
-
-  <section class="menu-cat" data-cat="Breads">
-    <h2 class="menu-cat-title">Breads</h2>
-    <div class="menu-item" data-name="butter naan"><div><span class="veg-dot veg"></span><span class="menu-item-name">Butter Naan</span><p class="menu-item-desc">Tandoor-fresh, brushed with white butter.</p></div><span class="menu-item-price">₹70</span></div>
-    <div class="menu-item" data-name="garlic naan"><div><span class="veg-dot veg"></span><span class="menu-item-name">Garlic Naan</span><p class="menu-item-desc">Roasted garlic, coriander.</p></div><span class="menu-item-price">₹90</span></div>
-    <div class="menu-item" data-name="laccha paratha"><div><span class="veg-dot veg"></span><span class="menu-item-name">Laccha Paratha</span><p class="menu-item-desc">Flaky whole-wheat layers.</p></div><span class="menu-item-price">₹80</span></div>
-  </section>
-
-  <section class="menu-cat" data-cat="Beverages & Desserts">
-    <h2 class="menu-cat-title">Beverages &amp; Desserts</h2>
-    <div class="menu-item" data-name="kulfi falooda"><div><span class="veg-dot veg"></span><span class="menu-item-name">Kulfi Falooda</span><p class="menu-item-desc">Dense kulfi, falooda, rose, pistachio.</p></div><span class="menu-item-price">₹240</span></div>
-    <div class="menu-item" data-name="gulab jamun cheesecake"><div><span class="veg-dot veg"></span><span class="menu-item-name">Gulab Jamun Cheesecake</span><p class="menu-item-desc">Baked cheesecake, jamun compote.</p></div><span class="menu-item-price">₹280</span></div>
-    <div class="menu-item" data-name="masala shikanjvi"><div><span class="veg-dot veg"></span><span class="menu-item-name">Masala Shikanjvi</span><p class="menu-item-desc">Spiced lemonade, roasted jeera.</p></div><span class="menu-item-price">₹140</span></div>
-    <div class="menu-item" data-name="cold coffee frappe"><div><span class="veg-dot veg"></span><span class="menu-item-name">Cold Coffee Frappe</span><p class="menu-item-desc">Blended thick, cocoa dust.</p></div><span class="menu-item-price">₹180</span></div>
-  </section>
-
-  <p class="no-results" id="noResults">No dishes match that search — try "kebab" or "paneer".</p>
-  <p class="demo-note" style="max-width:900px;margin:30px auto;padding:0 20px;">Demo note: five prices above are from Mahtab's public listings; all other items and prices are illustrative sample data for this test build — confirm with the restaurant before publishing.</p>
+<!-- The full menu: one category at a time, search across everything -->
+<section class="menu" id="menu" aria-labelledby="menuTitle">
+  <div class="menu-inner">
+    <div class="menu-head">
+      <p class="eyebrow" data-reveal="fade">Browse</p>
+      <h2 class="section-title" id="menuTitle" data-lines>By category</h2>
+      <p class="menu-note" data-reveal="fade">One category at a time. Search looks across all 20 entries.</p>
+    </div>
+    <div class="menu-tools" id="menuTools">
+      <form class="menu-search js-only" role="search" id="menuSearch" autocomplete="off" onsubmit="return false">
+        <label class="visually-hidden" for="menuQuery">Search the menu</label>
+        <svg class="menu-search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input id="menuQuery" type="search" placeholder="Search dishes, e.g. kebab, biryani, naan" spellcheck="false">
+        <button type="button" class="menu-clear" id="menuClear" hidden aria-label="Clear search">×</button>
+      </form>
+      <nav class="cat-rail" id="catRail" aria-label="Menu categories">
+        <span class="cat-pill" id="catPill" aria-hidden="true"></span>
+        <a class="cat" href="#starters" data-cat="starters">स्टार्टर्स <span class="cat-n">4</span></a>
+<a class="cat" href="#tandoor" data-cat="tandoor">तंदूर और कबाब <span class="cat-n">4</span></a>
+<a class="cat" href="#mains" data-cat="mains">मुख्य व्यंजन <span class="cat-n">5</span></a>
+<a class="cat" href="#breads" data-cat="breads">रोटी <span class="cat-n">3</span></a>
+<a class="cat" href="#desserts" data-cat="desserts">पेय और मिठाई <span class="cat-n">4</span></a>
+      </nav>
+      <p class="menu-status" id="menuStatus" aria-live="polite"></p>
+    </div>
+    <div class="menu-cats" id="menuCats">
+      <section class="menu-cat" id="menu-starters" data-cat="starters" aria-labelledby="menu-starters-h" hidden><header class="menu-cat-head"><h3 id="menu-starters-h" tabindex="-1"><span class="menu-cat-es">स्टार्टर्स</span> <span class="menu-cat-en">Starters</span></h3><p class="menu-cat-count"><span data-count>4</span> entries</p></header><ul class="menu-list"><li class="menu-item" id="mahtab-001" data-id="mahtab-001" data-search="paneer tikka angar स्टार्टर्स starters"><span class="menu-item-name">Paneer Tikka Angar</span></li><li class="menu-item" id="mahtab-002" data-id="mahtab-002" data-search="dahi ke kebab स्टार्टर्स starters"><span class="menu-item-name">Dahi Ke Kebab</span></li><li class="menu-item" id="mahtab-003" data-id="mahtab-003" data-search="amritsari fish fry स्टार्टर्स starters"><span class="menu-item-name">Amritsari Fish Fry</span></li><li class="menu-item" id="mahtab-004" data-id="mahtab-004" data-search="chicken 65 स्टार्टर्स starters"><span class="menu-item-name">Chicken 65</span></li></ul></section>
+      <section class="menu-cat" id="menu-tandoor" data-cat="tandoor" aria-labelledby="menu-tandoor-h" hidden><header class="menu-cat-head"><h3 id="menu-tandoor-h" tabindex="-1"><span class="menu-cat-es">तंदूर और कबाब</span> <span class="menu-cat-en">Tandoor &amp; Kebabs</span></h3><p class="menu-cat-count"><span data-count>4</span> entries</p></header><ul class="menu-list"><li class="menu-item has-photo" id="mahtab-005" data-id="mahtab-005" data-search="tandoori platter तंदूर और कबाब tandoor &amp; kebabs"><button type="button" class="menu-item-photo" data-spot="mahtab-005" aria-label="Show the photo of Tandoori Platter in the food spotlight"><img src="../media/menu/tandoori-platter_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Tandoori Platter"></button><span class="menu-item-name">Tandoori Platter</span><span class="menu-item-meta">Photo</span></li><li class="menu-item has-photo" id="mahtab-006" data-id="mahtab-006" data-search="chicken seekh kebab तंदूर और कबाब tandoor &amp; kebabs"><button type="button" class="menu-item-photo" data-spot="mahtab-006" aria-label="Show the photo of Chicken Seekh Kebab in the food spotlight"><img src="../media/menu/seekh-kebab_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Chicken Seekh Kebab"></button><span class="menu-item-name">Chicken Seekh Kebab</span><span class="menu-item-meta">Photo</span></li><li class="menu-item" id="mahtab-007" data-id="mahtab-007" data-search="murgh malai kebab तंदूर और कबाब tandoor &amp; kebabs"><span class="menu-item-name">Murgh Malai Kebab</span></li><li class="menu-item" id="mahtab-008" data-id="mahtab-008" data-search="mushroom tikka तंदूर और कबाब tandoor &amp; kebabs"><span class="menu-item-name">Mushroom Tikka</span></li></ul></section>
+      <section class="menu-cat" id="menu-mains" data-cat="mains" aria-labelledby="menu-mains-h" hidden><header class="menu-cat-head"><h3 id="menu-mains-h" tabindex="-1"><span class="menu-cat-es">मुख्य व्यंजन</span> <span class="menu-cat-en">Main Course</span></h3><p class="menu-cat-count"><span data-count>5</span> entries</p></header><ul class="menu-list"><li class="menu-item has-photo" id="mahtab-009" data-id="mahtab-009" data-search="dal mahtab मुख्य व्यंजन main course"><button type="button" class="menu-item-photo" data-spot="mahtab-009" aria-label="Show the photo of Dal Mahtab in the food spotlight"><img src="../media/menu/dal-mahtab_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Dal Mahtab"></button><span class="menu-item-name">Dal Mahtab</span><span class="menu-item-meta">Photo</span></li><li class="menu-item has-photo" id="mahtab-010" data-id="mahtab-010" data-search="butter chicken मुख्य व्यंजन main course"><button type="button" class="menu-item-photo" data-spot="mahtab-010" aria-label="Show the photo of Butter Chicken in the food spotlight"><img src="../media/menu/butter-chicken_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Butter Chicken"></button><span class="menu-item-name">Butter Chicken</span><span class="menu-item-meta">Photo</span></li><li class="menu-item has-photo" id="mahtab-011" data-id="mahtab-011" data-search="chicken biryani मुख्य व्यंजन main course"><button type="button" class="menu-item-photo" data-spot="mahtab-011" aria-label="Show the photo of Chicken Biryani in the food spotlight"><img src="../media/menu/chicken-biryani_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Chicken Biryani"></button><span class="menu-item-name">Chicken Biryani</span><span class="menu-item-meta">Photo</span></li><li class="menu-item" id="mahtab-012" data-id="mahtab-012" data-search="paneer lababdar मुख्य व्यंजन main course"><span class="menu-item-name">Paneer Lababdar</span></li><li class="menu-item" id="mahtab-013" data-id="mahtab-013" data-search="rogan josh मुख्य व्यंजन main course"><span class="menu-item-name">Rogan Josh</span></li></ul></section>
+      <section class="menu-cat" id="menu-breads" data-cat="breads" aria-labelledby="menu-breads-h" hidden><header class="menu-cat-head"><h3 id="menu-breads-h" tabindex="-1"><span class="menu-cat-es">रोटी</span> <span class="menu-cat-en">Breads</span></h3><p class="menu-cat-count"><span data-count>3</span> entries</p></header><ul class="menu-list"><li class="menu-item" id="mahtab-014" data-id="mahtab-014" data-search="butter naan रोटी breads"><span class="menu-item-name">Butter Naan</span></li><li class="menu-item" id="mahtab-015" data-id="mahtab-015" data-search="garlic naan रोटी breads"><span class="menu-item-name">Garlic Naan</span></li><li class="menu-item" id="mahtab-016" data-id="mahtab-016" data-search="laccha paratha रोटी breads"><span class="menu-item-name">Laccha Paratha</span></li></ul></section>
+      <section class="menu-cat" id="menu-desserts" data-cat="desserts" aria-labelledby="menu-desserts-h" hidden><header class="menu-cat-head"><h3 id="menu-desserts-h" tabindex="-1"><span class="menu-cat-es">पेय और मिठाई</span> <span class="menu-cat-en">Beverages &amp; Desserts</span></h3><p class="menu-cat-count"><span data-count>4</span> entries</p></header><ul class="menu-list"><li class="menu-item has-photo" id="mahtab-017" data-id="mahtab-017" data-search="kulfi falooda पेय और मिठाई beverages &amp; desserts"><button type="button" class="menu-item-photo" data-spot="mahtab-017" aria-label="Show the photo of Kulfi Falooda in the food spotlight"><img src="../media/menu/kulfi-falooda_320.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Kulfi Falooda"></button><span class="menu-item-name">Kulfi Falooda</span><span class="menu-item-meta">Photo</span></li><li class="menu-item" id="mahtab-018" data-id="mahtab-018" data-search="gulab jamun cheesecake पेय और मिठाई beverages &amp; desserts"><span class="menu-item-name">Gulab Jamun Cheesecake</span></li><li class="menu-item" id="mahtab-019" data-id="mahtab-019" data-search="masala shikanjvi पेय और मिठाई beverages &amp; desserts"><span class="menu-item-name">Masala Shikanjvi</span></li><li class="menu-item" id="mahtab-020" data-id="mahtab-020" data-search="cold coffee frappe पेय और मिठाई beverages &amp; desserts"><span class="menu-item-name">Cold Coffee Frappe</span></li></ul></section>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer class="footer">
-  <div class="footer-inner">
-    <span class="footer-brand">MAHTAB</span>
-    <div class="footer-links">
-      <a href="../">Home</a>
-      <a href="tel:+911141558899">Call</a>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=28.888384,76.614469" target="_blank" rel="noopener">Directions</a>
-      <a href="#top">Back to top</a>
-    </div>
-    <p class="footer-fine">Demo website built for testing — not the restaurant's official site. Menu data is illustrative.</p>
-  </div>
+<footer class="footer footer-menu">
+  <p>Mahtab · 14 Janpath, Connaught Place, New Delhi 110001 · Open daily 11 AM – 11:30 PM</p>
+  <p><a href="../">Home</a> · <a href="tel:+911141558899">Call to reserve</a> · <a href="https://www.google.com/maps/dir/?api=1&amp;destination=28.888384,76.614469" target="_blank" rel="noopener noreferrer">Directions<span class="visually-hidden"> (opens in a new tab)</span></a> · <a href="#menu">Top of menu</a></p>
+  <p class="footer-call"><a class="button button-primary" href="tel:+911141558899"><svg class="i-call" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call +91 11 4155 8899</a></p>
 </footer>
 
+<div class="action-bar" id="actionBar" aria-label="Quick actions">
+  <button type="button" class="button button-primary" data-order-open>Reserve</button>
+  <a class="button button-ghost" href="../">Home</a>
+  <a class="button button-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=28.888384,76.614469" target="_blank" rel="noopener noreferrer">Directions<span class="visually-hidden"> (opens in a new tab)</span></a>
+</div>
+
+<dialog class="lightbox" id="lightbox" aria-labelledby="lightboxCaption">
+  <figure class="lightbox-figure" id="lightboxFigure">
+    <div class="lightbox-scroller" id="lightboxScroller"><img id="lightboxImg" alt=""></div>
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+  <div class="lightbox-tools">
+    <button type="button" class="lightbox-zoom" id="lightboxZoom" aria-pressed="false">Zoom in</button>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close photo"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+</dialog>
+
+<script type="application/json" id="menuData">{"categories": [{"id": "starters", "es": "स्टार्टर्स", "en": "Starters", "count": 4}, {"id": "tandoor", "es": "तंदूर और कबाब", "en": "Tandoor & Kebabs", "count": 4}, {"id": "mains", "es": "मुख्य व्यंजन", "en": "Main Course", "count": 5}, {"id": "breads", "es": "रोटी", "en": "Breads", "count": 3}, {"id": "desserts", "es": "पेय और मिठाई", "en": "Beverages & Desserts", "count": 4}], "items": [{"id": "mahtab-001", "cat": "starters", "name": "Paneer Tikka Angar", "img": null}, {"id": "mahtab-002", "cat": "starters", "name": "Dahi Ke Kebab", "img": null}, {"id": "mahtab-003", "cat": "starters", "name": "Amritsari Fish Fry", "img": null}, {"id": "mahtab-004", "cat": "starters", "name": "Chicken 65", "img": null}, {"id": "mahtab-005", "cat": "tandoor", "name": "Tandoori Platter", "img": "tandoori-platter"}, {"id": "mahtab-006", "cat": "tandoor", "name": "Chicken Seekh Kebab", "img": "seekh-kebab"}, {"id": "mahtab-007", "cat": "tandoor", "name": "Murgh Malai Kebab", "img": null}, {"id": "mahtab-008", "cat": "tandoor", "name": "Mushroom Tikka", "img": null}, {"id": "mahtab-009", "cat": "mains", "name": "Dal Mahtab", "img": "dal-mahtab"}, {"id": "mahtab-010", "cat": "mains", "name": "Butter Chicken", "img": "butter-chicken"}, {"id": "mahtab-011", "cat": "mains", "name": "Chicken Biryani", "img": "chicken-biryani"}, {"id": "mahtab-012", "cat": "mains", "name": "Paneer Lababdar", "img": null}, {"id": "mahtab-013", "cat": "mains", "name": "Rogan Josh", "img": null}, {"id": "mahtab-014", "cat": "breads", "name": "Butter Naan", "img": null}, {"id": "mahtab-015", "cat": "breads", "name": "Garlic Naan", "img": null}, {"id": "mahtab-016", "cat": "breads", "name": "Laccha Paratha", "img": null}, {"id": "mahtab-017", "cat": "desserts", "name": "Kulfi Falooda", "img": "kulfi-falooda"}, {"id": "mahtab-018", "cat": "desserts", "name": "Gulab Jamun Cheesecake", "img": null}, {"id": "mahtab-019", "cat": "desserts", "name": "Masala Shikanjvi", "img": null}, {"id": "mahtab-020", "cat": "desserts", "name": "Cold Coffee Frappe", "img": null}], "base": "../"}</script>
 <script src="../js/core.js" defer></script>
+<script src="../js/order.js" defer></script>
+<script src="../js/lines.js" defer></script>
 <script src="../js/menu.js" defer></script>
 </body>
 </html>

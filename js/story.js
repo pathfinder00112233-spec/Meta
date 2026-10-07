@@ -1,48 +1,22 @@
-/* Mahtab demo — pinned story: on wide screens one viewport of scroll
-   scrubs the headline sideways while the photo settles 1.07 -> 1.0.
-   Static layout on phones / reduced motion. Original code. */
+/* El Pueblo #2 — pinned story (desktop only): one viewport of scroll scrubs the headline across the screen while the photograph settles 1.06 → 1.0 */
 (function () {
   'use strict';
-  var section = document.getElementById('story');
-  var track = document.getElementById('storyTrack');
-  var img = document.getElementById('storyImg');
-  if (!section || !track) return;
-
-  var pinMQ = window.matchMedia('(min-width: 900px)');
-  var pinned = false;
-
-  function motionOk() {
-    return (!window.MAHTAB || window.MAHTAB.motionOn()) &&
-      !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  }
-  function applyMode() {
-    pinned = pinMQ.matches && motionOk();
-    section.classList.toggle('is-pinned', pinned);
-    if (!pinned) { track.style.transform = ''; if (img) img.style.transform = ''; }
-  }
-  pinMQ.addEventListener ? pinMQ.addEventListener('change', applyMode) : pinMQ.addListener(applyMode);
-  document.addEventListener('mahtab:motion', applyMode);
-  applyMode();
-
-  var ticking = false;
-  function update() {
-    ticking = false;
+  const EP = window.EP;
+  const section = document.getElementById('story'), track = document.getElementById('storyTrack'), img = document.getElementById('storyImg');
+  const pinMQ = matchMedia('(min-width: 900px)');
+  let pinned = false, textW = 0;
+  function measure() { textW = track.scrollWidth; }
+  function mode() { pinned = pinMQ.matches && !EP.reduced; section.classList.toggle('is-pinned', pinned); if (!pinned) { track.style.transform = ''; img.style.transform = ''; } else measure(); EP.measure(); }
+  EP.track(section, (p) => {
     if (!pinned) return;
-    var r = section.getBoundingClientRect();
-    var vh = window.innerHeight;
-    var range = Math.max(1, r.height - vh);
-    var t = Math.min(1, Math.max(0, -r.top / range));
-    var textW = track.scrollWidth;
-    var vw = window.innerWidth;
-    var from = vw * 0.06;
-    var to = -(textW - vw * 0.94);
-    var x = from + (to - from) * t;
-    track.style.transform = 'translate3d(' + x.toFixed(1) + 'px,0,0)';
-    if (img) img.style.transform = 'scale(' + (1.07 - 0.07 * t).toFixed(3) + ')';
-  }
-  window.addEventListener('scroll', function () {
-    if (!ticking) { ticking = true; requestAnimationFrame(update); }
-  }, { passive: true });
-  window.addEventListener('resize', update);
-  update();
+    // progress across the section's own scroll range: 0 when its top reaches the viewport top, 1 when its bottom meets the viewport bottom
+    const r = section.getBoundingClientRect(); const range = Math.max(1, r.height - EP.vh); const t = EP.clamp(-r.top / range, 0, 1);
+    const from = EP.vw * 0.55, to = -(textW - EP.vw * 0.45);
+    track.style.transform = 'translate3d(' + (from + (to - from) * t).toFixed(1) + 'px,0,0)';
+    img.style.transform = 'scale(' + (1.06 - 0.06 * t).toFixed(4) + ')';
+  });
+  pinMQ.addEventListener('change', mode); document.addEventListener('ep:motion', mode);
+  addEventListener('resize', () => { clearTimeout(section._rt); section._rt = setTimeout(() => { if (pinned) measure(); }, 160); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { measure(); EP.measure(); });
+  mode();
 })();

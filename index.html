@@ -1,222 +1,317 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mahtab Rooftop Restaurant — Delhi | Dinner Under the Moonlight</title>
-<meta name="description" content="Mahtab is Delhi's moonlit rooftop restaurant — Mughlai, North Indian and tandoor classics served under the night sky, with live music. Open daily 12 PM – 12 AM at Connaught Place.">
-<meta property="og:title" content="Mahtab Rooftop Restaurant — Delhi">
-<meta property="og:description" content="Dinner above the city: rooftop seating, live music, multicuisine kitchen. Open daily 11 AM – 11:30 PM.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mahtab — Moonlit rooftop restaurant in Delhi</title>
+<meta name="description" content="Mahtab is Delhi's moonlit rooftop restaurant — Mughlai, North Indian and tandoor classics served under the night sky, with live music. Open daily 11 AM – 11:30 PM at Connaught Place.">
+<meta name="theme-color" content="#f8f4ec">
+<meta property="og:title" content="Mahtab">
+<meta property="og:description" content="Moonlit rooftop restaurant in Delhi. Open daily 11 AM – 11:30 PM.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="media/video/poster_warm_1920.jpg">
+<meta property="og:image" content="media/video/poster_1920.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d9a441'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23171419'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="font" type="font/woff2" href="fonts/anton-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/manrope-latin.woff2" crossorigin>
 <link rel="stylesheet" href="fonts/fonts.css">
+<link rel="preload" as="image" href="media/video/poster_1920.jpg" imagesrcset="media/video/poster_1280.jpg 1280w, media/video/poster_1920.jpg 1920w" imagesizes="100vw">
 <link rel="stylesheet" href="css/site.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "Mahtab Multicuisine Rooftop Restaurant",
-  "servesCuisine": ["North Indian", "Chinese", "Mughlai", "Kebab"],
-  "telephone": "+91 11 4155 8899",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "14 Janpath, Connaught Place",
-    "addressLocality": "New Delhi",
-    "addressRegion": "Haryana",
-    "postalCode": "110001",
-    "addressCountry": "IN"
-  },
-  "geo": { "@type": "GeoCoordinates", "latitude": 28.888384, "longitude": 76.614469 },
-  "openingHours": "Mo-Su 11:00-23:30",
-  "priceRange": "₹₹",
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "1400" }
-}
-</script>
+<script>document.documentElement.classList.replace('no-js','js');try{if(localStorage.getItem('ep-motion')==='off')document.documentElement.classList.add('reduce-motion')}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Mahtab Multicuisine Rooftop Restaurant", "address": {"@type": "PostalAddress", "streetAddress": "14 Janpath, Connaught Place", "addressLocality": "New Delhi", "addressRegion": "Delhi", "postalCode": "110001", "addressCountry": "IN"}, "geo": {"@type": "GeoCoordinates", "latitude": 28.888384, "longitude": 76.614469}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "11:00", "closes": "23:30"}], "servesCuisine": ["North Indian", "Chinese", "Mughlai", "Kebab"], "telephone": "+91-11-4155-8899", "image": "media/video/poster_1920.jpg"}</script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<nav class="site-nav" id="siteNav" aria-label="Primary">
-  <a class="brand-mini" href="#top">MAHTAB</a>
-  <div class="nav-links">
-    <a href="#story" class="hide-sm">Story</a>
-    <a href="#gallery" class="hide-sm">Rooftop</a>
+<!-- Continuous atmosphere: three slow aurora layers, one static grain texture, a desktop cursor glow. -->
+<div class="atmosphere" aria-hidden="true">
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+  <div class="aurora aurora-3"></div>
+  <div class="grain"></div>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-progress" aria-hidden="true"><span id="navProgress"></span></div>
+  <a class="nav-brand" href="#top" aria-label="Mahtab, back to top"><span class="nav-mark" aria-hidden="true">M</span><span>Mahtab</span></a>
+  <nav class="nav-links" aria-label="Sections">
     <a href="menu/">Menu</a>
-    <a href="#visit" class="hide-sm">Visit</a>
-    <a class="call-btn" href="tel:+911141558899">Call</a>
-    <button class="motion-toggle" id="motionToggle" aria-pressed="false" title="Toggle decorative motion">Motion: On</button>
-  </div>
-</nav>
-
-<!-- ============ HERO ============ -->
-<header class="hero" id="top">
-  <div class="hero-media">
-    <img class="hero-poster" id="heroPoster"
-         src="media/video/poster_1280.jpg"
-         srcset="media/video/poster_1280.jpg 1280w, media/video/poster_1920.jpg 1920w"
-         sizes="100vw" fetchpriority="high" decoding="async"
-         alt="Mahtab restaurant entrance glowing gold at night">
-    <video class="hero-video" id="heroVideo" muted playsinline loop preload="auto"
-           aria-label="Mahtab film: the glowing entrance at night, the rooftop with live music, and a candle-lit cabana under the city lights."></video>
-    <div class="hero-shade" aria-hidden="true"></div>
-    <canvas class="particles" id="particles" aria-hidden="true"></canvas>
-  </div>
-  <div class="hero-copy">
-    <p class="eyebrow">Moonlit Rooftop Restaurant · Delhi</p>
-    <h1 class="hero-title">Dinner under<br>the <span class="gold">moonlight.</span></h1>
-    <p class="hero-sub">North Indian, Chinese, Mughlai and kebabs — served on a rooftop under the night sky, with live music on weekends.</p>
-    <div class="hero-cta">
-      <a class="btn btn-solid" href="tel:+911141558899">Call to reserve</a>
-      <a class="btn" href="menu/">Explore the menu</a>
+    <a href="#gallery" data-section="gallery">Rooftop</a>
+    <a href="#rooms" data-section="rooms">Views</a>
+    <a href="#visit" data-section="visit">Visit</a>
+    <span class="nav-marker" id="navMarker" aria-hidden="true"></span>
+  </nav>
+  <div class="nav-tools">
+    <div class="order-chooser" id="orderChooser">
+      <button type="button" class="nav-order" id="orderBtn" aria-expanded="false" aria-controls="orderMenu" aria-haspopup="true">Reserve<span class="nav-order-ext">&nbsp;a table</span> <span class="nav-order-caret" aria-hidden="true">▾</span></button>
+      <div class="order-menu" id="orderMenu" hidden>
+        <p class="order-menu-title">Reserve your table</p>
+        <a class="order-option" href="tel:+911141558899"><span class="order-option-name">Call to reserve</span><span class="order-option-note">Opens your phone app</span></a>
+      </div>
     </div>
+    <button class="motion-toggle" id="motionToggle" type="button" aria-pressed="true"><span class="motion-dot" aria-hidden="true"></span><span class="motion-label">Motion on</span></button>
+    <button class="nav-menu" id="navMenu" type="button" aria-expanded="false" aria-controls="navPanel">Menu</button>
   </div>
-  <p class="scroll-hint" aria-hidden="true">Scroll</p>
+  <div class="nav-panel" id="navPanel" hidden>
+    <a href="menu/">Menu</a><a href="#gallery">Rooftop</a><a href="#rooms">Views</a><a href="#visit">Visit</a>
+    <a href="tel:+911141558899">Call to reserve</a>
+  </div>
 </header>
 
-<!-- ============ BRAND ============ -->
-<section class="section brand" id="brand">
-  <div class="glow glow-a" aria-hidden="true"></div>
-  <div class="trail-stage" id="trailStage" aria-hidden="true"></div>
-  <div class="section-inner reveal">
-    <h2 class="brand-title">MAHTAB</h2>
-    <p class="brand-tag">Rooftop · Live Music · Multicuisine</p>
-    <p class="trail-hint">Move your finger across this section — the kitchen follows.</p>
+<main id="main">
+<span id="top"></span>
+
+<!-- 01 — Cinematic entrance: the approved film (js/media-contract.js), full width, muted, looping, poster first.
+     The gold MAHTAB / DINNER UNDER THE MOONLIGHT title lives inside the footage (final title card),
+     so no headline is placed over the picture; the brand line and the CTAs sit in the bottom band, the navigation stays at the top. -->
+<section class="entrance" id="entrance" data-section="entrance" data-palette="dawn" aria-labelledby="heroTitle">
+  <div class="hero-media" id="heroMedia">
+    <video id="heroVideo" class="hero-video" muted playsinline loop preload="metadata" width="1920" height="1080" poster="media/video/poster_1920.jpg" aria-label="Mahtab film: the glowing entrance at night, the rooftop with live music, and a candle-lit cabana under the city lights."></video>
+    <img id="heroPoster" class="hero-poster" src="media/video/poster_1920.jpg" srcset="media/video/poster_1280.jpg 1280w, media/video/poster_1920.jpg 1920w" sizes="100vw" width="1920" height="1080" fetchpriority="high" decoding="async" alt="The chef plating a dish in warm light at Mahtab, with the gold MAHTAB title.">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <!-- No visible pause control. The site-wide Motion toggle pauses the film; reduced motion shows the poster. -->
+  </div>
+  <div class="hero-band">
+    <div class="hero-text">
+      <h1 class="hero-title" id="heroTitle"><span class="hero-title-name">Mahtab</span><span class="hero-title-sub">Moonlit rooftop restaurant · Delhi</span></h1>
+      <p class="hero-lead">14 Janpath, Connaught Place, New Delhi. Open every day, 11 AM to 11:30 PM.</p>
+    </div>
+    <div class="hero-actions">
+      <a class="button button-primary button-call" href="tel:+911141558899"><svg class="i-call" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call to reserve</a>
+      <a class="button button-glass" href="menu/">Explore the menu</a>
+      <a class="button button-glass" href="https://www.google.com/maps/dir/?api=1&amp;destination=28.888384,76.614469" target="_blank" rel="noopener noreferrer">Get directions <span class="ext" aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+    </div>
   </div>
 </section>
 
-<!-- ============ STORY (pinned on desktop) ============ -->
-<section class="section story" id="story">
-  <div class="story-pin" id="storyPin">
-    <div class="story-stick">
-      <div class="section-inner" style="max-width:none;width:100%;">
-        <div class="story-track" id="storyTrack">
-          <h2 class="story-headline">The city glows below. <em>The moon dines up here.</em></h2>
-          <div class="story-photo">
-            <img id="storyImg" src="media/photos/story-wide.jpg" alt="Live guitarist on Mahtab's rooftop stage at night">
-          </div>
+<!-- 02 — Brand scene with the food-image trail: the title and copy stay; move across the scene to reveal the dishes. -->
+<section class="brand brand-trail" id="brand" data-section="brand" data-palette="noon" aria-labelledby="brandTitle">
+  <div class="fields" aria-hidden="true"><span class="field field-a" data-depth="0.18"></span><span class="field field-c" data-depth="0.3"></span></div>
+  <div class="trail-stage" id="trailStage" aria-hidden="true"></div>
+  <div class="brand-inner">
+    <p class="eyebrow">From the tandoor</p>
+    <h2 class="brand-title" id="brandTitle" aria-label="Mahtab">
+      <span class="line" aria-hidden="true"><span class="line-inner">Mahtab</span></span>
+    </h2>
+    <div class="brand-copy" data-reveal="fade">
+      <p class="lead">A moonlit rooftop kitchen above Connaught Place: Mughlai and North Indian classics, tandoor smoke and kebabs, Chinese favourites — with live music under the night sky.</p>
+      <p class="trail-hint" id="trailHint"><span class="trail-hint-mouse">Move across this scene to see the plates.</span><span class="trail-hint-touch">Tap or slide across this scene to see the plates.</span></p>
+      <div class="brand-actions">
+        <a class="button button-primary" href="menu/">Explore the menu</a>
+        <a class="button button-ghost" href="#gallery">See the rooftop</a>
+      </div>
+    </div>
+    <ul class="trail-preview" id="trailPreview" aria-label="A few plates from the kitchen">
+      <li class="trail-preview-item" style="--k:0"><img src="media/dishes/dish-tandoori.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Smoked tandoori platter, charred over real coals"></li>
+<li class="trail-preview-item" style="--k:1"><img src="media/dishes/dish-dal.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Black dal simmered overnight, finished with cream"></li>
+<li class="trail-preview-item" style="--k:2"><img src="media/dishes/dish-biryani.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Dum biryani sealed on handi, saffron and crisp onion"></li>
+<li class="trail-preview-item" style="--k:3"><img src="media/dishes/dish-kebab.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Hand-minced seekh kebabs, smoked over coals"></li>
+    </ul>
+  </div>
+  <div class="cloud-boundary" aria-hidden="true"></div>
+</section>
+
+<!-- 02B — Pinned story (desktop only): the headline scrubs across while the photograph settles over about one viewport of scroll. Normal flow on phones and under reduced motion. -->
+<section class="story" id="story" data-section="story" data-palette="warm" aria-labelledby="storyTitle">
+  <div class="story-pin">
+    <figure class="story-media"><img id="storyImg" src="media/story/story-wide.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Live guitarist on Mahtab's rooftop stage at night"></figure>
+    <div class="story-shade" aria-hidden="true"></div>
+    <h2 class="story-title" id="storyTitle"><span class="story-track" id="storyTrack">Dinner under the moonlight</span></h2>
+    <p class="story-caption">The rooftop stage: live musicians, lantern light and the Delhi skyline. Perched above Connaught Place.</p>
+  </div>
+</section>
+
+<svg class="ribbon" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path class="ribbon-base" d="M0 70 C 240 70, 320 20, 560 20 S 880 70, 1120 70 S 1380 20, 1440 20"/><path class="ribbon-light" d="M0 70 C 240 70, 320 20, 560 20 S 880 70, 1120 70 S 1380 20, 1440 20"/></svg>
+
+<!-- 03 — Dimensional InfiniteSpiral gallery -->
+<section class="spiral" id="gallery" data-section="gallery" data-palette="afternoon" aria-labelledby="spiralTitle">
+  <div class="spiral-head">
+    <p class="eyebrow" data-reveal="fade">The rooftop</p>
+    <h2 class="section-title" id="spiralTitle" data-lines>Nights at Mahtab</h2>
+    <p class="spiral-hint" data-reveal="fade">Scroll, drag or use the arrow keys. Select a photo to open it.</p>
+  </div>
+  <div class="spiral-track" id="spiralTrack">
+    <div class="spiral-stage" id="spiralStage" tabindex="0" role="group" aria-roledescription="gallery" aria-label="Photo gallery">
+      <ul class="spiral-items" id="spiralItems">
+        <li class="spiral-item" data-ratio="3/2"><button type="button" class="spiral-open" data-lightbox="media/gallery/gal-terrace.jpg" data-caption="The terrace under a hundred lanterns."><img src="media/gallery/gal-terrace.jpg" sizes="(min-width: 900px) 46vw, 84vw" width="1200" height="800" loading="lazy" decoding="async" alt="Terrace strung with lantern light" data-caption="The terrace under a hundred lanterns."><span class="haze"></span></button></li>
+        <li class="spiral-item" data-ratio="3/2"><button type="button" class="spiral-open" data-lightbox="media/gallery/gal-dining.jpg" data-caption="Dinner by candlelight, every night."><img src="media/gallery/gal-dining.jpg" sizes="(min-width: 900px) 46vw, 84vw" width="1200" height="800" loading="lazy" decoding="async" alt="Candle-lit dining on the rooftop" data-caption="Dinner by candlelight, every night."><span class="haze"></span></button></li>
+        <li class="spiral-item" data-ratio="3/2"><button type="button" class="spiral-open" data-lightbox="media/gallery/gal-bar.jpg" data-caption="The bar pours till late."><img src="media/gallery/gal-bar.jpg" sizes="(min-width: 900px) 46vw, 84vw" width="1200" height="800" loading="lazy" decoding="async" alt="Cocktail pour at the bar" data-caption="The bar pours till late."><span class="haze"></span></button></li>
+        <li class="spiral-item" data-ratio="3/2"><button type="button" class="spiral-open" data-lightbox="media/gallery/gal-music.jpg" data-caption="Live music under the moon."><img src="media/gallery/gal-music.jpg" sizes="(min-width: 900px) 46vw, 84vw" width="1200" height="800" loading="lazy" decoding="async" alt="Live musician silhouette on stage" data-caption="Live music under the moon."><span class="haze"></span></button></li>
+        <li class="spiral-item" data-ratio="3/2"><button type="button" class="spiral-open" data-lightbox="media/gallery/gal-cityview.jpg" data-caption="Delhi glittering below."><img src="media/gallery/gal-cityview.jpg" sizes="(min-width: 900px) 46vw, 84vw" width="1200" height="800" loading="lazy" decoding="async" alt="City skyline from the terrace" data-caption="Delhi glittering below."><span class="haze"></span></button></li>
+        <li class="spiral-item" data-ratio="3/2"><button type="button" class="spiral-open" data-lightbox="media/gallery/gal-dessert.jpg" data-caption="Something sweet to end the night."><img src="media/gallery/gal-dessert.jpg" sizes="(min-width: 900px) 46vw, 84vw" width="1200" height="800" loading="lazy" decoding="async" alt="Indian dessert in dramatic light" data-caption="Something sweet to end the night."><span class="haze"></span></button></li>
+      </ul>
+      <div class="spiral-ui">
+        <p class="spiral-caption" id="spiralCaption" aria-live="polite"></p>
+        <div class="spiral-controls">
+          <div class="spiral-progress"><span id="spiralCount">01 / 06</span><span class="spiral-bar" aria-hidden="true"><i id="spiralBar"></i></span></div>
+          <button class="round-btn" id="spiralPrev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="round-btn" id="spiralNext" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
         </div>
       </div>
     </div>
   </div>
-  <div class="section-inner reveal" style="margin-top:6vh;">
-    <p class="section-lead">Perched above Connaught Place, Mahtab pairs a serious Mughlai and North Indian kitchen — tandoor, grill and handi — with Delhi's most romantic rooftop: lantern light, warm lamps, and musicians playing under the moon.</p>
+</section>
+
+<!-- 03B — From the kitchen: six signature dishes, then the full menu page -->
+<section class="featured" id="menu-preview" data-section="menu-preview" data-palette="warm" aria-labelledby="featuredTitle">
+  <div class="fields" aria-hidden="true"><span class="field field-b" data-depth="0.22"></span></div>
+  <div class="featured-inner">
+    <div class="featured-head">
+      <p class="eyebrow" data-reveal="fade">From the kitchen</p>
+      <h2 class="section-title" id="featuredTitle" data-lines>Crowd favourites</h2>
+      <p class="featured-note" data-reveal="fade">Six signatures from the tandoor and the handi. The full menu lives on the next page.</p>
+      <a class="button button-primary featured-cta" href="menu/" data-reveal="fade">View full menu <span class="ext" aria-hidden="true">→</span></a>
+    </div>
+    <ul class="featured-grid" id="featuredGrid" aria-label="Featured dishes">
+      <li class="fcard" data-reveal="scale" style="--i:0"><a class="fcard-link zoomable" href="menu/#mahtab-005"><span class="fcard-img"><img src="media/dishes/dish-tandoori.jpg" sizes="(min-width: 900px) 28vw, 46vw" width="1200" height="800" loading="lazy" decoding="async" alt=""></span><span class="fcard-text"><span class="fcard-name">Tandoori Platter</span><span class="fcard-cat">Tandoor &amp; Kebabs</span></span></a></li>
+<li class="fcard" data-reveal="scale" style="--i:1"><a class="fcard-link zoomable" href="menu/#mahtab-009"><span class="fcard-img"><img src="media/dishes/dish-dal.jpg" sizes="(min-width: 900px) 28vw, 46vw" width="1200" height="800" loading="lazy" decoding="async" alt=""></span><span class="fcard-text"><span class="fcard-name">Dal Mahtab</span><span class="fcard-cat">Main Course</span></span></a></li>
+<li class="fcard" data-reveal="scale" style="--i:2"><a class="fcard-link zoomable" href="menu/#mahtab-011"><span class="fcard-img"><img src="media/dishes/dish-biryani.jpg" sizes="(min-width: 900px) 28vw, 46vw" width="1200" height="800" loading="lazy" decoding="async" alt=""></span><span class="fcard-text"><span class="fcard-name">Chicken Biryani</span><span class="fcard-cat">Main Course</span></span></a></li>
+<li class="fcard" data-reveal="scale" style="--i:3"><a class="fcard-link zoomable" href="menu/#mahtab-006"><span class="fcard-img"><img src="media/dishes/dish-kebab.jpg" sizes="(min-width: 900px) 28vw, 46vw" width="1200" height="800" loading="lazy" decoding="async" alt=""></span><span class="fcard-text"><span class="fcard-name">Seekh Kebab</span><span class="fcard-cat">Tandoor &amp; Kebabs</span></span></a></li>
+<li class="fcard" data-reveal="scale" style="--i:4"><a class="fcard-link zoomable" href="menu/#mahtab-010"><span class="fcard-img"><img src="media/dishes/dish-curry.jpg" sizes="(min-width: 900px) 28vw, 46vw" width="1200" height="800" loading="lazy" decoding="async" alt=""></span><span class="fcard-text"><span class="fcard-name">Butter Chicken</span><span class="fcard-cat">Main Course</span></span></a></li>
+<li class="fcard" data-reveal="scale" style="--i:5"><a class="fcard-link zoomable" href="menu/#mahtab-017"><span class="fcard-img"><img src="media/dishes/dish-kulfi.jpg" sizes="(min-width: 900px) 28vw, 46vw" width="1200" height="800" loading="lazy" decoding="async" alt=""></span><span class="fcard-text"><span class="fcard-name">Kulfi Falooda</span><span class="fcard-cat">Desserts</span></span></a></li>
+    </ul>
   </div>
 </section>
 
-<!-- ============ GALLERY ============ -->
-<section class="section" id="gallery">
-  <div class="glow glow-b" aria-hidden="true"></div>
-  <div class="section-inner reveal">
-    <p class="section-kicker">The rooftop</p>
-    <h2 class="section-title">Nights at Mahtab</h2>
-    <p class="section-lead">Drag, swipe, or use the arrows. Real photos from the rooftop.</p>
-    <div class="gal-viewport">
-      <div class="gal-track" id="galTrack">
-        <figure class="gal-slide"><img src="media/photos/gal-terrace.jpg" alt="Terrace strung with lantern light" draggable="false"><figcaption class="gal-cap">The terrace under a hundred lanterns.</figcaption></figure>
-        <figure class="gal-slide"><img src="media/photos/gal-dining.jpg" alt="Candle-lit dining room" draggable="false"><figcaption class="gal-cap">Dinner by candlelight, every night.</figcaption></figure>
-        <figure class="gal-slide"><img src="media/photos/gal-bar.jpg" alt="Cocktail pour at the bar" draggable="false"><figcaption class="gal-cap">The bar pours till late.</figcaption></figure>
-        <figure class="gal-slide"><img src="media/photos/gal-music.jpg" alt="Live musician silhouette on stage" draggable="false"><figcaption class="gal-cap">Live music under the moon.</figcaption></figure>
-        <figure class="gal-slide"><img src="media/photos/gal-cityview.jpg" alt="City skyline from the terrace" draggable="false"><figcaption class="gal-cap">Delhi glittering below.</figcaption></figure>
-        <figure class="gal-slide"><img src="media/photos/gal-dessert.jpg" alt="Indian dessert in dramatic light" draggable="false"><figcaption class="gal-cap">Something sweet to end the night.</figcaption></figure>
+<!-- 04 — Editorial viewpoint parallax with labelled corners -->
+<section class="rooms" id="rooms" data-section="rooms" data-palette="cool" aria-labelledby="roomsTitle">
+  <div class="fields" aria-hidden="true"><span class="field field-c" data-depth="0.16"></span><span class="field field-a" data-depth="0.26"></span></div>
+  <p class="rooms-word" aria-hidden="true" data-depth="-0.35">Mahtab</p>
+  <div class="rooms-inner">
+    <div class="rooms-text">
+      <p class="eyebrow" data-reveal="fade">The space</p>
+      <h2 class="section-title" id="roomsTitle" data-lines>Five corners of the rooftop</h2>
+      <p class="rooms-caption" id="roomsCaption" data-reveal="fade">The stage corner: a guitarist plays while the city hums below — green walls and string lights all around.</p>
+      <p class="rooms-note">Five photographs of the rooftop, labelled by corner. Not a floor plan or a 3D tour.</p>
+      <div class="viewpoints" role="group" aria-label="Viewpoint">
+        <p class="viewpoint-index" id="viewpointIndex" aria-live="polite">02 / 05 · Stage</p>
+        <div class="viewpoint-list" id="viewpointList">
+          <button type="button" class="viewpoint" data-view="0" aria-pressed="false">Entrance</button>
+          <button type="button" class="viewpoint is-active" data-view="1" aria-pressed="true">Stage</button>
+          <button type="button" class="viewpoint" data-view="2" aria-pressed="false">Cabana</button>
+          <button type="button" class="viewpoint" data-view="3" aria-pressed="false">Green Wall</button>
+          <button type="button" class="viewpoint" data-view="4" aria-pressed="false">Main Deck</button>
+        </div>
+        <div class="viewpoint-arrows">
+          <button class="round-btn" id="viewPrev" type="button" aria-label="Previous viewpoint"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="round-btn" id="viewNext" type="button" aria-label="Next viewpoint"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
       </div>
     </div>
-    <div class="gal-ui">
-      <button class="gal-btn" id="galPrev" aria-label="Previous photo">←</button>
-      <button class="gal-btn" id="galNext" aria-label="Next photo">→</button>
-      <span class="gal-count" id="galCount">01 / 06</span>
-      <div class="gal-bar" aria-hidden="true"><i id="galBar"></i></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ MENU PREVIEW ============ -->
-<section class="section alt-bg" id="taste">
-  <div class="section-inner reveal">
-    <p class="section-kicker">From the kitchen</p>
-    <h2 class="section-title">Crowd favourites</h2>
-    <p class="section-lead">Tandoor smoke, wok fire, and plates built for sharing. A few signatures below — the full menu lives on the next page.</p>
-    <div class="dish-grid">
-      <article class="dish reveal-child"><img src="media/photos/dish-tandoori.jpg" alt="Smoked tandoori platter, charred over real coals at Mahtab"><div class="dish-body"><span class="dish-price">₹540</span><p class="dish-cat">Tandoor & Kebabs</p><h3 class="dish-name">Tandoori Platter</h3></div></article>
-      <article class="dish reveal-child"><img src="media/photos/dish-dal.jpg" alt="Black dal simmered overnight, finished with cream at Mahtab"><div class="dish-body"><span class="dish-price">₹320</span><p class="dish-cat">Main Course</p><h3 class="dish-name">Dal Mahtab</h3></div></article>
-      <article class="dish reveal-child"><img src="media/photos/dish-biryani.jpg" alt="Dum biryani sealed on handi, saffron and crisp onion at Mahtab"><div class="dish-body"><span class="dish-price">₹380</span><p class="dish-cat">Main Course</p><h3 class="dish-name">Chicken Biryani</h3></div></article>
-      <article class="dish reveal-child"><img src="media/photos/dish-kebab.jpg" alt="Hand-minced kebabs, smoked over coals at Mahtab"><div class="dish-body"><span class="dish-price">₹440</span><p class="dish-cat">Tandoor & Kebabs</p><h3 class="dish-name">Seekh Kebab</h3></div></article>
-      <article class="dish reveal-child"><img src="media/photos/dish-curry.jpg" alt="Old Delhi butter chicken, tomato-makhani gravy at Mahtab"><div class="dish-body"><span class="dish-price">₹420</span><p class="dish-cat">Main Course</p><h3 class="dish-name">Butter Chicken</h3></div></article>
-      <article class="dish reveal-child"><img src="media/photos/dish-kulfi.jpg" alt="Dense kulfi, falooda, rose and pistachio at Mahtab"><div class="dish-body"><span class="dish-price">₹240</span><p class="dish-cat">Desserts</p><h3 class="dish-name">Kulfi Falooda</h3></div></article>
-    </div>
-    <div class="menu-more"><a class="btn btn-solid" href="menu/">See the full menu</a></div>
-    <p class="demo-note">Demo note: prices shown are from public listings; the full menu page is illustrative sample data for this test build.</p>
-  </div>
-</section>
-
-<!-- ============ VIEWPOINTS ============ -->
-<section class="section" id="views">
-  <div class="section-inner reveal">
-    <p class="section-kicker">Walkthrough</p>
-    <h2 class="section-title">Five corners of the rooftop</h2>
-    <div class="views">
-      <div>
-        <div class="view-photo"><img id="viewImg" src="media/photos/view-entrance.jpg" alt="Mahtab entrance at night"></div>
-        <p class="view-caption" id="viewCaption">The entrance on Janpath: the gold MAHTAB sign, warm wood panelling, and the stairway up to the roof.</p>
+    <figure class="rooms-photo rooms-photo-main" data-depth="0.12">
+      <div class="overscan rooms-stack" id="roomsStack">
+        <img class="rooms-view" data-view="0" src="media/views/view-entrance.jpg" sizes="(min-width: 900px) 58vw, 100vw" width="1200" height="800" loading="lazy" decoding="async" alt="The entrance on Janpath: the gold MAHTAB sign, warm wood panelling, and the stairway up to the roof.">
+        <img class="rooms-view is-active" data-view="1" src="media/views/view-stage.jpg" sizes="(min-width: 900px) 58vw, 100vw" width="1200" height="800" loading="lazy" decoding="async" alt="The stage corner: a guitarist plays while the city hums below.">
+        <img class="rooms-view" data-view="2" src="media/views/view-cabana.jpg" sizes="(min-width: 900px) 58vw, 100vw" width="1200" height="800" loading="lazy" decoding="async" alt="The cabana: a set table, glowing lamps, and Delhi's lights beyond the railing.">
+        <img class="rooms-view" data-view="3" src="media/views/view-greenwall.jpg" sizes="(min-width: 900px) 58vw, 100vw" width="1200" height="800" loading="lazy" decoding="async" alt="The living wall: Mahtab's gold logo set into a vertical garden.">
+        <img class="rooms-view" data-view="4" src="media/views/view-deck.jpg" sizes="(min-width: 900px) 58vw, 100vw" width="1200" height="800" loading="lazy" decoding="async" alt="The main deck: long tables, warm lamps, and room for the whole family.">
       </div>
-      <div class="view-list" role="tablist" aria-label="Rooftop viewpoints">
-        <button class="viewpoint active" data-img="media/photos/view-entrance.jpg" data-cap="The entrance on Janpath: the gold MAHTAB sign, warm wood panelling, and the stairway up to the roof."><b>01 · The Entrance</b><span>Gold on black, glowing from the street.</span></button>
-        <button class="viewpoint" data-img="media/photos/view-stage.jpg" data-cap="The stage corner: a guitarist plays while the city hums below — green walls and string lights all around."><b>02 · The Stage</b><span>Live music under the open sky.</span></button>
-        <button class="viewpoint" data-img="media/photos/view-cabana.jpg" data-cap="The cabana: a set table, glowing lamps, and Delhi's lights beyond the railing."><b>03 · The Cabana</b><span>Your table, the city as backdrop.</span></button>
-        <button class="viewpoint" data-img="media/photos/view-greenwall.jpg" data-cap="The living wall: Mahtab's gold logo set into a vertical garden."><b>04 · The Green Wall</b><span>Where everyone takes the photo.</span></button>
-        <button class="viewpoint" data-img="media/photos/view-deck.jpg" data-cap="The main deck: long tables, warm lamps, and room for the whole family."><b>05 · The Main Deck</b><span>Built for big tables and long evenings.</span></button>
+      <figcaption class="rooms-figcap"><button type="button" class="link-btn" id="roomsView">View photo</button></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 05 — Living typography -->
+<section class="type" id="statement" data-section="statement" data-palette="noon" aria-label="Mahtab in words">
+  <div class="fields" aria-hidden="true"><span class="field field-b" data-depth="0.14"></span></div>
+  <h2 class="statement" id="statement-text">Tandoor smoke and slow handis, kebabs off the coals, <em>live music under the Delhi sky.</em></h2>
+  <div class="textloop" aria-hidden="true">
+    <span class="textloop-label">Next</span>
+    <span class="textloop-window" id="textLoop">
+      <span class="textloop-item is-active">Explore the menu</span>
+      <span class="textloop-item">Step onto the roof</span>
+      <span class="textloop-item">Visit Connaught Place</span>
+      <span class="textloop-item">Call to reserve</span>
+      <span class="textloop-item">Live music on weekends</span>
+    </span>
+  </div>
+  <div class="particle-wrap" id="particleWrap">
+    <h3 class="particle-text" id="particleText">Mahtab</h3>
+    <canvas class="particle-canvas" id="particleCanvas" aria-hidden="true"></canvas>
+    <p class="particle-hint" aria-hidden="true">Move across the letters</p>
+  </div>
+</section>
+
+<svg class="ribbon" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path class="ribbon-base" d="M0 20 C 200 20, 300 70, 520 70 S 860 20, 1100 20 S 1380 70, 1440 70"/><path class="ribbon-light" d="M0 20 C 200 20, 300 70, 520 70 S 860 20, 1100 20 S 1380 70, 1440 70"/></svg>
+
+<!-- 07B — Atmosphere: one full-bleed rooftop photograph revealed by a clip mask, with a slower caption for depth -->
+<section class="atmo" id="atmosphere" data-section="atmosphere" data-palette="cool" aria-labelledby="atmoTitle">
+  <figure class="atmo-figure" data-clip>
+    <div class="atmo-media" data-depth="0.22"><img src="media/gallery/gal-cityview.jpg" sizes="100vw" width="1200" height="800" loading="lazy" decoding="async" alt="The Delhi skyline glittering below Mahtab's rooftop terrace at night."></div>
+    <figcaption class="atmo-caption" data-depth="0.08">
+      <p class="eyebrow">The city</p>
+      <h2 class="atmo-title" id="atmoTitle" data-lines>Delhi glittering below</h2>
+      <p>A thousand lights, dinner under the moon. The skyline from Mahtab's terrace.</p>
+    </figcaption>
+  </figure>
+</section>
+
+<!-- 08 — Information and closing -->
+<section class="visit" id="visit" data-section="visit" data-palette="evening" aria-labelledby="visitTitle">
+  <div class="visit-backdrop" aria-hidden="true"><span class="field field-a"></span><span class="field field-b"></span></div>
+  <p class="visit-big" aria-hidden="true" data-lines>Janpath · 14</p>
+  <div class="visit-inner">
+    <figure class="visit-photo" data-depth="0.2" data-reveal="scale">
+      <div class="overscan"><img src="media/views/view-entrance.jpg" sizes="(min-width: 900px) 58vw, 100vw" width="1200" height="800" loading="lazy" decoding="async" alt="The entrance on Janpath: the gold MAHTAB sign glowing at night."></div>
+    </figure>
+    <div class="visit-text">
+      <p class="eyebrow" data-reveal="fade">Visit</p>
+      <h2 class="section-title" id="visitTitle" data-lines>Come up to the roof.</h2>
+      <dl class="facts">
+        <div><dt>Address</dt><dd>14 Janpath<br>Connaught Place, New Delhi 110001</dd></div>
+        <div><dt>Hours</dt><dd>Open daily, 11:00 AM – 11:30 PM<br><span class="facts-note">Kitchen closes 11:00 PM.</span></dd></div>
+        <div><dt>Reserve</dt><dd>Call +91 11 4155 8899 to reserve. The rooftop fills fast on weekends.</dd></div>
+      </dl>
+      <div class="visit-actions">
+        <a class="button button-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=28.888384,76.614469" target="_blank" rel="noopener noreferrer">Directions <span class="ext" aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+        <a class="button button-ghost button-call" href="tel:+911141558899"><svg class="i-call" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call to reserve</a>
+        <a class="button button-ghost" href="menu/">Explore the menu</a>
       </div>
+      <p class="visit-note"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=28.888384,76.614469" target="_blank" rel="noopener noreferrer">Open in Google Maps<span class="visually-hidden"> (opens in a new tab)</span></a>. Directions open in your maps app with the destination filled in; no location is requested here.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ STATEMENT ============ -->
-<section class="section alt-bg statement" id="statement">
-  <div class="glow glow-a" aria-hidden="true"></div>
-  <div class="section-inner">
-    <p class="section-kicker">Why Mahtab</p>
-    <p class="statement-text" id="statementText">Tandoor smoke and slow handis, kebabs off the coals, and live music drifting over the Delhi skyline — every single night.</p>
-  </div>
+<section class="closing" id="closing" aria-label="Closing">
+  <p class="closing-word" aria-hidden="true">Mahtab</p>
+  <footer class="footer">
+    <p>Mahtab · 14 Janpath, Connaught Place, New Delhi 110001 · Open daily 11 AM – 11:30 PM</p>
+    <p><a href="menu/">Menu</a> · <a href="tel:+911141558899">Call to reserve</a> · <a href="https://www.google.com/maps/dir/?api=1&amp;destination=28.888384,76.614469" target="_blank" rel="noopener noreferrer">Directions<span class="visually-hidden"> (opens in a new tab)</span></a> · <a href="#top">Top</a></p>
+    <p class="footer-call"><a class="button button-primary button-call" href="tel:+911141558899"><svg class="i-call" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call +91 11 4155 8899</a></p>
+  </footer>
 </section>
+</main>
 
-<!-- ============ VISIT ============ -->
-<section class="section" id="visit">
-  <div class="section-inner reveal">
-    <p class="section-kicker">Visit</p>
-    <h2 class="section-title">Come up to the roof.</h2>
-    <div class="visit-grid">
-      <div class="visit-card reveal-child">
-        <h3>Find us</h3>
-        <p>14 Janpath,<br>Connaught Place,<br>New Delhi 110001</p>
-        <p style="margin-top:16px;"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=28.888384,76.614469" target="_blank" rel="noopener">Get directions</a></p>
-      </div>
-      <div class="visit-card reveal-child">
-        <h3>Hours &amp; contact</h3>
-        <div class="hours-row"><span>Mon – Sun</span><span id="todayHours">11:00 AM – 11:30 PM</span></div>
-        <div class="hours-row"><span>Kitchen closes</span><span>11:00 PM</span></div>
-        <p style="margin-top:16px;"><a class="big" href="tel:+911141558899">+91 11 4155 8899</a></p>
-        <p class="demo-note" style="border:0;padding:0;">Call ahead on weekends — the rooftop fills fast.</p>
-      </div>
-    </div>
+<!-- Mobile action bar: shown on phones after the hero, hidden while a dialog or the nav panel is open -->
+<div class="action-bar" id="actionBar" aria-label="Quick actions">
+  <button type="button" class="button button-primary" data-order-open>Reserve</button>
+  <a class="button button-ghost" href="menu/">Menu</a>
+  <a class="button button-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=28.888384,76.614469" target="_blank" rel="noopener noreferrer">Directions<span class="visually-hidden"> (opens in a new tab)</span></a>
+</div>
+
+<!-- Photo viewer: native dialog, shared-image expansion, capped zoom -->
+<dialog class="lightbox" id="lightbox" aria-labelledby="lightboxCaption">
+  <figure class="lightbox-figure" id="lightboxFigure">
+    <div class="lightbox-scroller" id="lightboxScroller"><img id="lightboxImg" alt=""></div>
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+  <div class="lightbox-tools">
+    <button type="button" class="lightbox-zoom" id="lightboxZoom" aria-pressed="false">Zoom in</button>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close photo"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   </div>
-</section>
+</dialog>
 
-<footer class="footer">
-  <div class="footer-inner">
-    <span class="footer-brand">MAHTAB</span>
-    <div class="footer-links">
-      <a href="menu/">Menu</a>
-      <a href="tel:+911141558899">Call</a>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=28.888384,76.614469" target="_blank" rel="noopener">Directions</a>
-      <a href="#top">Back to top</a>
-    </div>
-    <p class="footer-fine">Demo website built for testing — not the restaurant's official site. Photos are public guest photos; menu data is illustrative.</p>
-  </div>
-</footer>
-
+<script src="js/media-contract.js" defer></script>
 <script src="js/core.js" defer></script>
-<script src="js/hero.js" defer></script>
+<script src="js/order.js" defer></script>
+<script type="application/json" id="trailData">[{"src": "media/dishes/dish-tandoori.jpg", "w": 1200, "h": 800}, {"src": "media/dishes/dish-dal.jpg", "w": 1200, "h": 800}, {"src": "media/dishes/dish-biryani.jpg", "w": 1200, "h": 800}, {"src": "media/dishes/dish-kebab.jpg", "w": 1200, "h": 800}, {"src": "media/dishes/dish-curry.jpg", "w": 1200, "h": 800}, {"src": "media/dishes/dish-kulfi.jpg", "w": 1200, "h": 800}]</script>
+<script src="js/entrance.js" defer></script>
 <script src="js/trail.js" defer></script>
+<script src="js/brand-title.js" defer></script>
+<script src="js/lines.js" defer></script>
 <script src="js/story.js" defer></script>
-<script src="js/gallery.js" defer></script>
-<script src="js/words.js" defer></script>
+<script src="js/spiral.js" defer></script>
+<script src="js/rooms.js" defer></script>
+<script src="js/typography.js" defer></script>
 </body>
 </html>
