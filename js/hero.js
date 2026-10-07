@@ -36,15 +36,29 @@
     if (poster) poster.style.opacity = '0';
   });
 
-  // Start once the film can play through its first seconds.
+  // Start the film ASAP. Do NOT wait for window 'load': on slow networks
+  // the load event can take minutes (large images), which would leave the
+  // hero stuck on the poster. Defer scripts run after DOM parse, so the
+  // video element is ready now.
   var started = false;
   function start() {
     if (started) return;
     started = true;
     tryPlay();
   }
-  if (document.readyState === 'complete') start();
-  else window.addEventListener('load', start);
+  start();
+  // Backup: retry once shortly after, in case motion state wasn't ready
+  // on the first attempt (e.g. core.js still initializing).
+  setTimeout(function () {
+    if (video.paused && motionAllowed()) { started = false; start(); }
+  }, 2500);
+  // Final fallback: if the page 'load' event was what the old code waited
+  // for, retry then too — harmless if already playing.
+  if (document.readyState !== 'complete') {
+    window.addEventListener('load', function () {
+      if (video.paused && motionAllowed()) { started = false; start(); }
+    });
+  }
 
   document.addEventListener('qaenat:motion', function (e) {
     if (!e.detail.on) {
