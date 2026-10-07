@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Qaenat Multicuisine Rooftop Restaurant, Rohtak</title>
+<meta name="description" content="Qaenat's demo menu: starters, tandoor & kebabs, Chinese, North Indian mains, breads, beverages and desserts. Prices from public listings.">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Qaenat Multicuisine Rooftop Restaurant",
+  "telephone": "+91 89505 09292",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Dhouchak Complex, 75-R Part B, Power House Chowk, near Tikona Park, Model Town",
+    "addressLocality": "Rohtak", "addressRegion": "Haryana",
+    "postalCode": "124001", "addressCountry": "IN"
+  },
+  "openingHours": "Mo-Su 11:00-23:30"
+}
+</script>
+</head>
+<body>
+
+<nav class="site-nav" id="siteNav" aria-label="Primary">
+  <a class="brand-mini" href="../">QAENAT</a>
+  <div class="nav-links">
+    <a href="../#gallery" class="hide-sm">Rooftop</a>
+    <a href="../#visit" class="hide-sm">Visit</a>
+    <a class="call-btn" href="tel:+918950509292">Call</a>
+    <button class="motion-toggle" id="motionToggle" aria-pressed="false">Motion: On</button>
+  </div>
+</nav>
+
+<header class="menu-hero">
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="section-inner reveal">
+    <p class="section-kicker">The menu</p>
+    <h1 class="section-title">Eat like you're<br>above it all.</h1>
+    <p class="section-lead" style="margin:0 auto;">North Indian, Chinese, Mughlai and kebabs — search the whole menu or pick a category.</p>
+    <div class="menu-tools">
+      <input class="menu-search" id="menuSearch" type="search" placeholder="Search dishes… e.g. kebab" aria-label="Search the menu">
+    </div>
+    <div class="cat-pills" id="catPills" role="tablist" aria-label="Menu categories"></div>
+  </div>
+</header>
+
+<main id="menuList">
+  <p class="menu-count" id="menuCount"></p>
+
+  <section class="menu-cat" data-cat="Starters">
+    <h2 class="menu-cat-title">Starters</h2>
+    <div class="menu-item" data-name="cheese chilli mushroom"><div><span class="veg-dot veg"></span><span class="menu-item-name">Cheese Chilli Mushroom</span><p class="menu-item-desc">Crisp mushrooms tossed with peppers in a smoky chilli glaze.</p></div><span class="menu-item-price">₹330</span></div>
+    <div class="menu-item" data-name="finger chips french fries"><div><span class="veg-dot veg"></span><span class="menu-item-name">Finger Chips</span><p class="menu-item-desc">Golden, salted, dangerously shareable.</p></div><span class="menu-item-price">₹220</span></div>
+    <div class="menu-item" data-name="paneer tikka angar"><div><span class="veg-dot veg"></span><span class="menu-item-name">Paneer Tikka Angar</span><p class="menu-item-desc">Charred cottage cheese, mint chutney. Demo item.</p></div><span class="menu-item-price">₹320</span></div>
+    <div class="menu-item" data-name="crispy honey chilli potato"><div><span class="veg-dot veg"></span><span class="menu-item-name">Crispy Honey Chilli Potato</span><p class="menu-item-desc">Sweet heat, sesame snow. Demo item.</p></div><span class="menu-item-price">₹260</span></div>
+  </section>
+
+  <section class="menu-cat" data-cat="Tandoor & Kebabs">
+    <h2 class="menu-cat-title">Tandoor &amp; Kebabs</h2>
+    <div class="menu-item" data-name="chicken seekh kebab"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Chicken Seekh Kebab</span><p class="menu-item-desc">Hand-minced, clay-oven smoked, onion laccha.</p></div><span class="menu-item-price">₹440</span></div>
+    <div class="menu-item" data-name="afghani chicken"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Afghani Chicken</span><p class="menu-item-desc">Cream, cardamom and charcoal — the house legend.</p></div><span class="menu-item-price">₹440</span></div>
+    <div class="menu-item" data-name="tandoori wings"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Tandoori Wings</span><p class="menu-item-desc">Overnight marinade, blistered skin. Demo item.</p></div><span class="menu-item-price">₹380</span></div>
+    <div class="menu-item" data-name="murgh malai tikka"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Murgh Malai Tikka</span><p class="menu-item-desc">Melt-soft, mild, kid-approved. Demo item.</p></div><span class="menu-item-price">₹420</span></div>
+  </section>
+
+  <section class="menu-cat" data-cat="Chinese">
+    <h2 class="menu-cat-title">Chinese</h2>
+    <div class="menu-item" data-name="veg manchurian dry"><div><span class="veg-dot veg"></span><span class="menu-item-name">Veg Manchurian Dry</span><p class="menu-item-desc">Wok-tossed vegetable dumplings, burnt garlic.</p></div><span class="menu-item-price">₹265</span></div>
+    <div class="menu-item" data-name="hakka noodles"><div><span class="veg-dot veg"></span><span class="menu-item-name">Hakka Noodles</span><p class="menu-item-desc">Smoky wok hei, crunchy veg. Demo item.</p></div><span class="menu-item-price">₹240</span></div>
+    <div class="menu-item" data-name="chilli chicken gravy"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Chilli Chicken Gravy</span><p class="menu-item-desc">The Indo-Chinese classic, extra peppers. Demo item.</p></div><span class="menu-item-price">₹360</span></div>
+    <div class="menu-item" data-name="schezwan fried rice"><div><span class="veg-dot veg"></span><span class="menu-item-name">Schezwan Fried Rice</span><p class="menu-item-desc">Fiery, spring onion, wok breath. Demo item.</p></div><span class="menu-item-price">₹250</span></div>
+  </section>
+
+  <section class="menu-cat" data-cat="Main Course">
+    <h2 class="menu-cat-title">Main Course</h2>
+    <div class="menu-item" data-name="dal qaenat special dal makhani"><div><span class="veg-dot veg"></span><span class="menu-item-name">Dal Qaenat Special</span><p class="menu-item-desc">Slow-cooked black dal, white butter swirl. Demo item.</p></div><span class="menu-item-price">₹280</span></div>
+    <div class="menu-item" data-name="butter chicken murgh makhani"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Butter Chicken</span><p class="menu-item-desc">Tomato-makhani, tandoori chicken folded in. Demo item.</p></div><span class="menu-item-price">₹420</span></div>
+    <div class="menu-item" data-name="kadhai paneer"><div><span class="veg-dot veg"></span><span class="menu-item-name">Kadhai Paneer</span><p class="menu-item-desc">Rustic masala, charred peppers. Demo item.</p></div><span class="menu-item-price">₹340</span></div>
+    <div class="menu-item" data-name="rogan josh mutton"><div><span class="veg-dot nonveg"></span><span class="menu-item-name">Mutton Rogan Josh</span><p class="menu-item-desc">Kashmiri chillies, slow braise. Demo item.</p></div><span class="menu-item-price">₹480</span></div>
+  </section>
+
+  <section class="menu-cat" data-cat="Breads">
+    <h2 class="menu-cat-title">Breads</h2>
+    <div class="menu-item" data-name="tandoori roti"><div><span class="veg-dot veg"></span><span class="menu-item-name">Tandoori Roti</span><p class="menu-item-desc">Blistered, buttered on request. Demo item.</p></div><span class="menu-item-price">₹40</span></div>
+    <div class="menu-item" data-name="butter naan"><div><span class="veg-dot veg"></span><span class="menu-item-name">Butter Naan</span><p class="menu-item-desc">Pillowy, ghee-glazed. Demo item.</p></div><span class="menu-item-price">₹70</span></div>
+    <div class="menu-item" data-name="garlic naan"><div><span class="veg-dot veg"></span><span class="menu-item-name">Garlic Naan</span><p class="menu-item-desc">Roasted garlic, coriander. Demo item.</p></div><span class="menu-item-price">₹90</span></div>
+    <div class="menu-item" data-name="laccha paratha"><div><span class="veg-dot veg"></span><span class="menu-item-name">Laccha Paratha</span><p class="menu-item-desc">Sixteen flaky layers. Demo item.</p></div><span class="menu-item-price">₹80</span></div>
+  </section>
+
+  <section class="menu-cat" data-cat="Beverages & Desserts">
+    <h2 class="menu-cat-title">Beverages &amp; Desserts</h2>
+    <div class="menu-item" data-name="virgin mint mojito"><div><span class="veg-dot veg"></span><span class="menu-item-name">Virgin Mint Mojito</span><p class="menu-item-desc">Crushed mint, lime, soda over ice. Demo item.</p></div><span class="menu-item-price">₹180</span></div>
+    <div class="menu-item" data-name="cold coffee frappe"><div><span class="veg-dot veg"></span><span class="menu-item-name">Cold Coffee Frappe</span><p class="menu-item-desc">Blended thick, cocoa dust. Demo item.</p></div><span class="menu-item-price">₹200</span></div>
+    <div class="menu-item" data-name="gulab jamun rabri"><div><span class="veg-dot veg"></span><span class="menu-item-name">Gulab Jamun with Rabri</span><p class="menu-item-desc">Warm jamuns, cold rabri. Demo item.</p></div><span class="menu-item-price">₹160</span></div>
+    <div class="menu-item" data-name="sizzling brownie ice cream"><div><span class="veg-dot veg"></span><span class="menu-item-name">Sizzling Brownie</span><p class="menu-item-desc">With vanilla ice cream, chocolate pour. Demo item.</p></div><span class="menu-item-price">₹260</span></div>
+  </section>
+
+  <p class="no-results" id="noResults">No dishes match that search — try "kebab" or "paneer".</p>
+  <p class="demo-note" style="max-width:900px;margin:30px auto;padding:0 20px;">Demo note: five prices above are from Qaenat's public listings; all other items and prices are illustrative sample data for this test build — confirm with the restaurant before publishing.</p>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-brand">QAENAT</span>
+    <div class="footer-links">
+      <a href="../">Home</a>
+      <a href="tel:+918950509292">Call</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=28.888384,76.614469" target="_blank" rel="noopener">Directions</a>
+      <a href="#top">Back to top</a>
+    </div>
+    <p class="footer-fine">Demo website built for testing — not the restaurant's official site. Menu data is illustrative.</p>
+  </div>
+</footer>
+
+<script src="../js/core.js" defer></script>
+<script src="../js/menu.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://qaenat-demo.example.com/sitemap.xml
