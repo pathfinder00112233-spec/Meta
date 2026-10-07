@@ -1,4 +1,4 @@
-/* Qaenat demo — hero: poster first, faststart film fades in when ready.
+/* Mahtab demo — hero: poster first, faststart film fades in when ready.
    Picks 720p/1080p by viewport; poster-only for reduced motion / Save-Data.
    Particle canvas drifts over the film. Original code. */
 (function () {
@@ -17,10 +17,10 @@
   var saveData = navigator.connection && navigator.connection.saveData;
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var wide = window.innerWidth >= 1100;
-  var src = wide ? 'media/video/qaenat-hero_1080.mp4' : 'media/video/qaenat-hero_720.mp4';
+  var src = wide ? 'media/video/mahtab-hero_1080.mp4' : 'media/video/mahtab-hero_720.mp4';
 
   function motionAllowed() {
-    return window.QAENAT && window.QAENAT.motionOn() && !reduced && !saveData;
+    return window.MAHTAB && window.MAHTAB.motionOn() && !reduced && !saveData;
   }
 
   function tryPlay() {
@@ -60,7 +60,7 @@
     });
   }
 
-  document.addEventListener('qaenat:motion', function (e) {
+  document.addEventListener('mahtab:motion', function (e) {
     if (!e.detail.on) {
       video.pause();
       video.classList.remove('playing');
@@ -123,8 +123,8 @@
   size();
   window.addEventListener('resize', function () { if (running) { size(); seed(); } });
   setRunning(true);
-  document.addEventListener('qaenat:motion', function (e) { setRunning(e.detail.on); });
+  document.addEventListener('mahtab:motion', function (e) { setRunning(e.detail.on); });
   document.addEventListener('visibilitychange', function () {
-    setRunning(!document.hidden && (!window.QAENAT || window.QAENAT.motionOn()));
+    setRunning(!document.hidden && (!window.MAHTAB || window.MAHTAB.motionOn()));
   });
 })();

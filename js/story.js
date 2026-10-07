@@ -1,4 +1,4 @@
-/* Qaenat demo — pinned story: on wide screens one viewport of scroll
+/* Mahtab demo — pinned story: on wide screens one viewport of scroll
    scrubs the headline sideways while the photo settles 1.07 -> 1.0.
    Static layout on phones / reduced motion. Original code. */
 (function () {
@@ -12,7 +12,7 @@
   var pinned = false;
 
   function motionOk() {
-    return (!window.QAENAT || window.QAENAT.motionOn()) &&
+    return (!window.MAHTAB || window.MAHTAB.motionOn()) &&
       !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   }
   function applyMode() {
@@ -21,7 +21,7 @@
     if (!pinned) { track.style.transform = ''; if (img) img.style.transform = ''; }
   }
   pinMQ.addEventListener ? pinMQ.addEventListener('change', applyMode) : pinMQ.addListener(applyMode);
-  document.addEventListener('qaenat:motion', applyMode);
+  document.addEventListener('mahtab:motion', applyMode);
   applyMode();
 
   var ticking = false;

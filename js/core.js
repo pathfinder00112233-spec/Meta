@@ -1,4 +1,4 @@
-/* Qaenat demo — core: motion toggle, nav state, scroll reveals.
+/* Mahtab demo — core: motion toggle, nav state, scroll reveals.
    Original code. */
 (function () {
   'use strict';
@@ -6,7 +6,7 @@
 
   // Motion preference: explicit toggle wins, else OS setting.
   var stored = null;
-  try { stored = localStorage.getItem('qaenat-motion'); } catch (e) {}
+  try { stored = localStorage.getItem('mahtab-motion'); } catch (e) {}
   var osReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var motionOn = stored !== null ? stored === 'on' : !osReduced;
 
@@ -17,8 +17,8 @@
       btn.setAttribute('aria-pressed', String(!motionOn));
       btn.textContent = motionOn ? 'Motion: On' : 'Motion: Off';
     }
-    try { localStorage.setItem('qaenat-motion', motionOn ? 'on' : 'off'); } catch (e) {}
-    document.dispatchEvent(new CustomEvent('qaenat:motion', { detail: { on: motionOn } }));
+    try { localStorage.setItem('mahtab-motion', motionOn ? 'on' : 'off'); } catch (e) {}
+    document.dispatchEvent(new CustomEvent('mahtab:motion', { detail: { on: motionOn } }));
   }
 
   document.addEventListener('click', function (ev) {
@@ -29,8 +29,8 @@
   });
   applyMotion();
 
-  window.QAENAT = window.QAENAT || {};
-  window.QAENAT.motionOn = function () { return motionOn; };
+  window.MAHTAB = window.MAHTAB || {};
+  window.MAHTAB.motionOn = function () { return motionOn; };
 
   // Nav background on scroll.
   var nav = document.getElementById('siteNav');

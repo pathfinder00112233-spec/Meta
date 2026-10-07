@@ -1,4 +1,4 @@
-/* Qaenat demo — menu page: live search + category pills.
+/* Mahtab demo — menu page: live search + category pills.
    Original code. */
 (function () {
   'use strict';

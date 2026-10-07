@@ -1,4 +1,4 @@
-/* Qaenat demo — swipe gallery: drag / arrows / keyboard, counter + bar.
+/* Mahtab demo — swipe gallery: drag / arrows / keyboard, counter + bar.
    Original code. */
 (function () {
   'use strict';
@@ -66,7 +66,7 @@
   var timer = 0;
   function auto() {
     clearInterval(timer);
-    var ok = (!window.QAENAT || window.QAENAT.motionOn()) &&
+    var ok = (!window.MAHTAB || window.MAHTAB.motionOn()) &&
       !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!ok) return;
     timer = setInterval(function () {
@@ -75,7 +75,7 @@
       if (r.top < window.innerHeight && r.bottom > 0) go(idx + 1);
     }, 6000);
   }
-  document.addEventListener('qaenat:motion', auto);
+  document.addEventListener('mahtab:motion', auto);
   auto();
   render();
 })();

@@ -1,4 +1,4 @@
-/* Qaenat demo — statement: words light up one by one as the line
+/* Mahtab demo — statement: words light up one by one as the line
    scrolls through the viewport. Original code. */
 (function () {
   'use strict';
@@ -39,7 +39,7 @@
     if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; update(); }); }
   }, { passive: true });
   window.addEventListener('resize', update);
-  document.addEventListener('qaenat:motion', update);
+  document.addEventListener('mahtab:motion', update);
   update();
 
   /* ---- viewpoints switcher ---- */

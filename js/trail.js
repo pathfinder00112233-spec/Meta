@@ -1,4 +1,4 @@
-/* Qaenat demo — food-photo trail: dish photos bloom behind the pointer
+/* Mahtab demo — food-photo trail: dish photos bloom behind the pointer
    as it crosses the brand section. Pooled, clipped, never over text.
    Original code. */
 (function () {
@@ -8,12 +8,12 @@
   if (!section || !stage) return;
 
   var PHOTOS = [
-    'media/photos/dish-seekh-kebab.webp',
-    'media/photos/dish-manchurian.webp',
-    'media/photos/dish-chilli-mushroom.webp',
-    'media/photos/dish-afghani-chicken.webp',
-    'media/photos/dish-finger-chips.webp',
-    'media/photos/dish-dal-special.webp'
+    'media/photos/dish-tandoori.jpg',
+    'media/photos/dish-dal.jpg',
+    'media/photos/dish-biryani.jpg',
+    'media/photos/dish-kebab.jpg',
+    'media/photos/dish-curry.jpg',
+    'media/photos/dish-kulfi.jpg'
   ];
   var coarse = window.matchMedia('(pointer: coarse)').matches;
   var POOL = coarse ? 3 : 6;
@@ -47,7 +47,7 @@
   });
 
   function motionOk() {
-    return (!window.QAENAT || window.QAENAT.motionOn()) &&
+    return (!window.MAHTAB || window.MAHTAB.motionOn()) &&
       !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   }
 
